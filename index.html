@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title>Prova app mobile</title>
+<meta charset=utf-8>
+<head>
+  <script src=js/cerchio.js>
+  </script>
+<link rel=stylesheet href=http://getskeleton.com/dist/css/normalize.css>
+<link rel=stylesheet href=http://getskeleton.com/dist/css/skeleton.css>
+</head>
+<body>
+     <div class=container>
+    <img src=/home/studente/app-ibride/img/4.jpg u-full-width>
+       <div class=row>
+          <div class="twelve columns">
+               <button class=button onclick="alert('ciao!')">
+Cliccami
+               </button>
+               <p>Area=r<sup>2</sup> π</p>
+          </div>
+       </div>
+       <div class=row>
+          <div class="six columns">
+          </div>
+          <div class="six columns">
+               <!-- form quadrato -->
+        <form name=circonferenza>
+        <label for=raggio>Misura del Raggio</label>
+        <input type=number name=r min=0.001 step=0.001 required><br>
+        <input type=reset value=Cancella onclick=cancella() class=button>
+        <button type=button onclick=calcolaCirconferenza()> Circonferenza </button>
+        <button type=button onclick=calcolaArea() class=button>Area</button>
+        </form>
+        <p id=Circonferenza> </p>
+        <p id=Area> </p>
+
+           
+          </div>
+       </div>
+     
+     </div>
+</body>
+</html>
